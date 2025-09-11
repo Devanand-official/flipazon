@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipazon</title>
+    <link rel="Icon" type="Icon" href="shopping-bag-2038.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesone Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    #noResults {
+    text-align: center;
+    font-size: 18px;
+    color: #ff4d4d;
+    margin: 30px 0;
+    font-weight: 500;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* smooth fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1>Flip<span style="color: white;">azon</span> 👜</h1>
+        </a>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i class="fa-solid fa-bars" onclick="shownavbar()"></i>
+        </div>
+    </nav>
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;"><i class="fa-solid fa-xmark" onclick="closenavbar()"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="index.html">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="index.html">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    <!-- Products -->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="product">
+
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/395555216/teetm_512.jpg" alt="white shirt">
+                <p>White Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/437714557/2u5bx_512.webp?width=512"
+                    alt="black shirt">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/383968460/ypqzh_512.webp?width=512"
+                    alt="Grey Pants">
+                <p>Grey Pants</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/439780613/edqw1_512.webp?width=512"
+                    alt="Black Pants">
+                <p>Black Pants</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/395555216/teetm_512.jpg" alt="white shirt">
+                <p>White Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/437714557/2u5bx_512.webp?width=512"
+                    alt="black shirt">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/383968460/ypqzh_512.webp?width=512"
+                    alt="Grey Pants">
+                <p>Grey Pants</p>
+            </div>
+            <div class="product-box">
+                <img src="https://images.meesho.com/images/products/439780613/edqw1_512.webp?width=512"
+                    alt="Black Pants">
+                <p>Black Pants</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+     <div class="main-content">
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="heading-text">Flipazon</h2>
+                <p>Quality Products | Fast Delivery | Easy Returns</p>
+                <p>Follow us on Instagram, Twitter & Facebook for Exclusive Offers</p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-x-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Flipazon. All Rights Reserved.</p>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <script>
+        sear.addEventListener("keyup", function (event) {
+    var entervalue = event.target.value.toUpperCase()
+    var found = false
+    for (i = 0; i < prodlist.length; i++) {
+        var prodname = prodlist[i].querySelector("p").textContent
+        if (prodname.toUpperCase().indexOf(entervalue) < 0) {
+            prodlist[i].style.display = "none"
+        } else {
+            prodlist[i].style.display = "block"
+            found = true
+        }
+    }
+    // Show "No products found" if nothing matches
+    let msg = document.getElementById("noResults")
+    if (!found) {
+        if (!msg) {
+            msg = document.createElement("p")
+            msg.id = "noResults"
+            msg.textContent = "😞 No Products Found. Try another search!";
+
+            msg.style.textAlign = "center"
+            msg.style.margin = "20px"
+            prodcontain.appendChild(msg)
+        }
+    } else {
+        if (msg) msg.remove()
+    }
+})
+
+    </script>
+</body>
+
+</html>

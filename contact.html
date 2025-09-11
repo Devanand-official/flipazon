@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipazon</title>
+    <link rel="Icon" type="Icon" href="shopping-bag-2038.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesone Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* ensures footer stays at bottom */
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1>Flip<span style="color: white;">azon</span> 👜</h1>
+        </a>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i class="fa-solid fa-bars" onclick="shownavbar()"></i>
+        </div>
+    </nav>
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;"><i class="fa-solid fa-xmark" onclick="closenavbar()"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="index.html">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="index.html">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    <!-- Contact -->
+    <main>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" class="contact-section">
+                <p>Name:</p>
+                <input type="text" required>
+                <p>E-mail:</p>
+                <input type="email" required>
+                <p>Message:</p>
+                <textarea name="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="heading-text">Flipazon</h2>
+                <p>Quality Products | Fast Delivery | Easy Returns</p>
+                <p>Follow us on Instagram, Twitter & Facebook for Exclusive Offers</p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-x-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <p>© 2025 Flipazon. All Rights Reserved.</p>
+    </div>
+<Script>
+    // Contact Form Submit
+    document.getElementById("contactForm").addEventListener("submit", function(event){
+        event.preventDefault() // Stop form from submitting normally
+        alert("Thank you for contacting us !   We will get back to you soon.            Happy Shopping !")
+        window.location.href = "index.html"; // Redirect to home page
+    })
+</Script>
+    <script src="script.js"></script>
+</body>
+
+</html>

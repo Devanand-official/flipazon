@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: orange;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgb(21, 21, 40);
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.side-navbar {
+    background-color: rgb(21, 21, 40);
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    transition: 1.5s;
+    padding: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.side-navbar-link {
+    margin-bottom: 35px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(21, 21, 40);
+    color: white;
+    cursor: pointer;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: rgb(240, 236, 236);
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.new-arrival,
+.most-wanted {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.new-arrival-container,
+.most-wanted-container {
+    position: relative;
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.new-arrival-container img,
+.most-wanted-container img {
+    width: 300px;
+    /* Make image responsive */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.new-arrival button,
+.most-wanted button {
+    position: absolute;
+    bottom: 3%;
+    /* distance from bottom of the image */
+    left: 150px;
+    /* center horizontally */
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(21, 21, 40);
+    cursor: pointer;
+}
+
+.news {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.news input {
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+    margin-top: 10px;
+}
+
+.news button {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(21, 21, 40);
+    border-radius: 10px;
+    padding: 10px; 
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(21, 21, 40);
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/* ------------------------ */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper for content */
+.main-content {
+    flex: 1; /* pushes footer down */
+}
+
+/* ------------------------ */
+
+.product-section {
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center horizontally */
+    justify-content: center;
+    /* center vertically if fixed height */
+    flex-basis: 20%;
+}
+
+.product-box img {
+    width: 250px;
+    /* Make image responsive */
+    height: 350px;
+    display: block;
+    border-radius: 10px;
+}
+
+.contact {
+    background-color: rgb(21, 21, 40);
+    color: rgba(255, 255, 255, 0.9);
+    margin: 50px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main {
+    flex: 1;
+    /* fills available vertical space */
+    display: flex;
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+}
+
+.contact-section {
+    background-color: #121225;
+    /* your current dark bg */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    max-width: 90%;
+}
+
+.contact-section input,
+textarea {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.contact-section input:focus {
+    outline: none;
+}
+
+.contact-section p {
+    margin: 8px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(21, 21, 40);
+    cursor: pointer;
+    position: relative;
+    left: 2px;
+}
+
+.contact-section button:hover {
+    background-color: orange;
+}
+
+/*Media Query*/
+@media screen and (max-width:700px) {
+    /* .navbar {
+        position: relative;
+    } */
+
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-container-2 div {
+        width: 90%;
+        /* occupy most of the screen width */
+    }
+
+    .new-arrival-container,
+    .most-wanted-container {
+        flex-basis: 70%;
+        /* full width on mobile */
+    }
+
+    .new-arrival-container button,
+    .most-wanted-container button {
+        bottom: 3%;
+        padding: 8px 15px;
+        font-size: 14px;
+        left: 150px;
+    }
+}

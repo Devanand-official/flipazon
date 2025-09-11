@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipazon</title>
+    <link rel="Icon" type="Icon" href="./images/shopping-bag-2038.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesone Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="index.html" style="text-decoration: none; color: inherit">
+          <h1>Flip<span style="color: white">azon</span> 👜</h1>
+        </a>
+        <div class="navbar-links">
+          <p class="navbar-link"><a href="index.html">Home</a></p>
+          <p class="navbar-link"><a href="collection.html">Collections</a></p>
+          <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+          <i class="fa-solid fa-bars" onclick="shownavbar()"></i>
+        </div>
+      </nav>
+      <!-- Side Navbar -->
+      <div class="side-navbar">
+        <p style="text-align: right">
+          <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p class="side-navbar-link"><a href="index.html">Home</a></p>
+          <p class="side-navbar-link"><a href="#new-arrival">New Arrival</a></p>
+          <p class="side-navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+          <p class="side-navbar-link">
+            <a href="collection.html">Collections</a>
+          </p>
+          <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="header">
+        <div>
+          <h1>Level up your Style</h1>
+          <p>With our Stunning Collections</p>
+          <button>Shop Now</button>
+        </div>
+        <div>
+          <img
+            class="header-img"
+            src="https://d118ps6mg0w7om.cloudfront.net/media/catalog/product/s/s/fit-in/1000x1333/ss-24_4000x5000-04-10-24_93_style_mfs-14973-s-16-blue_1_mfs-14973-s-16-blue.jpg"
+            alt="White Shirt"
+            width="250"
+          />
+        </div>
+      </div>
+      <!-- Service -->
+      <div class="service">
+        <div class="service-container-1">
+          <div>
+            <h2>We Provide Best</h2>
+            <h2>Customer Experience</h2>
+          </div>
+          <div>
+            <p>
+              || We ensure that our customer has the best shopping experience
+            </p>
+          </div>
+        </div>
+        <div class="service-container-2">
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>New Arrival Everyday</h4>
+            <p>
+              Discover the Latest Styles Every Day — Fresh Looks , Just for You
+            </p>
+          </div>
+          <div>
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Satisfaction Guarantee</h4>
+            <p>
+              We Stand by Our Products — Happy Customers are Our Top Priority
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-truck-fast"></i>
+            <h4>Fast and Free Shipping</h4>
+            <p>Get Delivered Quickly and Free of Charge — Right to Your Door</p>
+          </div>
+        </div>
+      </div>
+      <!-- New Arrival -->
+      <h2 id="new-arrival" style="padding: 20px">New Arrival</h2>
+
+      <div class="new-arrival">
+        <div class="new-arrival-container">
+          <img
+            src="https://www.ottostore.com/cdn/shop/files/Shot7_1024x1024.png?v=1741600108"
+            alt="Otto Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+        <div class="new-arrival-container">
+          <img
+            src="https://www.ottostore.com/cdn/shop/files/Shot2.png"
+            alt="Otto Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+        <div class="new-arrival-container">
+          <img
+            src="https://images.jdmagicbox.com/quickquotes/images_main/otto-mens-printed-blue-shirt-2219705955-luza3kl5.jpg"
+            alt="Black Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+        <div class="new-arrival-container">
+          <img
+            src="https://www.ottostore.com/cdn/shop/files/Shot-11_1080x.jpg"
+            alt="Otto Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+      </div>
+      <!-- Most Wanted -->
+      <h2 id="most-wanted" style="padding: 20px">Most Wanted</h2>
+
+      <div class="most-wanted">
+        <div class="most-wanted-container">
+          <img
+            src="https://www.ottostore.com/cdn/shop/files/Shot7_1024x1024.png?v=1741600108"
+            alt="Otto Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+        <div class="most-wanted-container">
+          <img
+            src="https://www.ottostore.com/cdn/shop/files/Shot2.png"
+            alt="Otto Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+        <div class="most-wanted-container">
+          <img
+            src="https://images.jdmagicbox.com/quickquotes/images_main/otto-mens-printed-blue-shirt-2219705955-luza3kl5.jpg"
+            alt="Black Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+        <div class="most-wanted-container">
+          <img
+            src="https://www.ottostore.com/cdn/shop/files/Shot-11_1080x.jpg"
+            alt="Otto Shirt"
+            width="250"
+            height="300"
+          />
+          <button>Shop Now <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+      </div>
+      <!-- News -->
+      <div class="news">
+        <h2>Join Our News Letter</h2>
+        <p>
+          Signup for our E-mail Newspaper to get Exclusive Discounts, Updates
+          and More
+        </p>
+        <div>
+          <input type="text" class="search" />
+        </div>
+        <div>
+          <button>Subscribe <i class="fa-solid fa-user-plus"></i></button>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-box-1">
+            <h2 class="heading-text">Flipazon</h2>
+            <p>Quality Products | Fast Delivery | Easy Returns</p>
+            <p>
+              Follow us on Instagram, Twitter & Facebook for Exclusive Offers
+            </p>
+            <div class="footer-icon">
+              <i class="fa-brands fa-instagram" style="color: white"></i>
+              <i class="fa-brands fa-x-twitter" style="color: white"></i>
+              <i class="fa-brands fa-facebook" style="color: white"></i>
+            </div>
+          </div>
+        </div>
+        <p>© 2025 Flipazon. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
