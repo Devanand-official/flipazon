@@ -3,6 +3,9 @@
 A simple and responsive E-Commerce Website that displays a list of products with images, names, and descriptions.  
 Great for demonstrating product showcase functionality in Front-End Development. 
 Implemented Flexbox and Grid layouts for modern, mobile-friendly design.
+  
+### 🚀 Live Demo
+https://devanand-official.github.io/Flipazon/
 
 ### 🔧 Features:
 - Display multiple products in a grid layout
@@ -14,6 +17,3 @@ Implemented Flexbox and Grid layouts for modern, mobile-friendly design.
 - HTML
 - CSS
 - JavaScript
-  
-### 🚀 Live Demo
-https://devanand-official.github.io/Flipazon/
