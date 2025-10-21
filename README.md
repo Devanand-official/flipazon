@@ -5,7 +5,7 @@ Great for demonstrating product showcase functionality in Front-End Development.
 Implemented Flexbox and Grid layouts for modern, mobile-friendly design.
   
 ### 🚀 Live Demo
-https://devanand.is-a.dev/flipazon/
+🌐 https://devanand.is-a.dev/flipazon/
 
 ### 🔧 Features:
 - Display multiple products in a grid layout
